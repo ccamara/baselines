@@ -1,4 +1,4 @@
-canvas_line <- function( x1 = 0.1, y1 = 0.1, x2 = 0.7, y2 = 0.3,
+canvas_arrow <- function( x1 = 0.1, y1 = 0.1, x2 = 0.7, y2 = 0.3,
                       col="lemonchiffon3", lwd=2, ... ){
 
   # save par settings
@@ -13,7 +13,7 @@ canvas_line <- function( x1 = 0.1, y1 = 0.1, x2 = 0.7, y2 = 0.3,
   plot_blank( xaxs="i", yaxs="i" )
 
   # add segments line
-  segments( x1, y1, x2, y2,
+  arrows( x1, y1, x2, y2,
             col=col, lwd=lwd, ... )
 
   # reset par to previous

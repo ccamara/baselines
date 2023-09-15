@@ -94,21 +94,25 @@ restore_par <- function( previous_par = NULL, ... ){
             default_par$yaxt <- "s"
             default_par$ylbias <- 0.2
 
-            previous_par <- default_par
+            par_to_restore <- default_par
+
+      } else{
+
+            par_to_restore <- previous_par
 
       }
 
       # strange behaviour when whole list given to which
-      removeElementsWithWarnings <- c( which( names(previous_par)==c( "cin")),
-                                       which( names(previous_par)==c( "cra" ) ),
-                                       which( names(previous_par)==c( "csi" ) ),
-                                       which( names(previous_par)==c( "cxy" ) ),
-                                       which( names(previous_par)==c( "din" ) ),
-                                       which( names(previous_par)==c( "page" ) ) )
+      removeElementsWithWarnings <- c( which( names(par_to_restore)==c( "cin")),
+                                       which( names(par_to_restore)==c( "cra" ) ),
+                                       which( names(par_to_restore)==c( "csi" ) ),
+                                       which( names(par_to_restore)==c( "cxy" ) ),
+                                       which( names(par_to_restore)==c( "din" ) ),
+                                       which( names(par_to_restore)==c( "page" ) ) )
 
       # reset par settings to previous par
-      par( previous_par[ - removeElementsWithWarnings ] )
+      par( par_to_restore[ - removeElementsWithWarnings ] )
 
-      restore_figure_region( previous_par = previous_par, ... )
+      restore_figure_region( previous_par = par_to_restore, ... )
 
 }

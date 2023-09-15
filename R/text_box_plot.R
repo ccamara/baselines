@@ -2,7 +2,7 @@
 
 loremText <- "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
-text_box_plot <- function( x_left = 0.3, y_bottom = 0.3, x_right = 0.7, y_top = 0.7,
+text_box_plot <- function( x1 = 0.3, y1 = 0.3, x2 = 0.7, y2 = 0.7,
                          text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
                          cex=1, font=1, family="serif",
                          adj=0, srt=0,
@@ -18,14 +18,14 @@ text_box_plot <- function( x_left = 0.3, y_bottom = 0.3, x_right = 0.7, y_top = 
                          vertical_alignment = "top",
                          horizontal_alignment = "left", ... ){
 
-  rect( x_left, y_bottom, x_right, y_top,
+  rect( x1, y1, x2, y2,
         border=border, col=col_box, lty=lty, xpd=xpd, ... )
 
   textCache <- strsplit( text, split = " " )[[1]]
 
   lineCounter <- 1
 
-  textBoxWidth <- x_right - x_left
+  textBoxWidth <- x2 - x1
   textAreaWidth <- textBoxWidth - left_margin*textBoxWidth - right_margin*textBoxWidth
 
   nParts <- length( textCache)
@@ -79,17 +79,17 @@ text_box_plot <- function( x_left = 0.3, y_bottom = 0.3, x_right = 0.7, y_top = 
 
   if( vertical_alignment == "top" || vertical_alignment == "Top" ){
 
-    textTop <- y_top - top_margin*y_top
+    textTop <- y2 - top_margin*y2
 
   } else if ( vertical_alignment == "bottom" || vertical_alignment == "Bottom" ){
 
-    textTop <- y_bottom +
+    textTop <- y1 +
       sum( max( textMarkUp$textLine )*( maxTextHeight + line_spacing*maxTextHeight )  ) +
-      bottom_margin*(y_bottom-y_top)
+      bottom_margin*(y1-y2)
 
   } else if ( vertical_alignment == "middle" || vertical_alignment == "Middle" ){
 
-    textTop <- y_bottom + 0.5*( y_bottom-y_top ) +
+    textTop <- y1 + 0.5*( y1-y2 ) +
       0.5*sum( max( textMarkUp$textLine )*( maxTextHeight + line_spacing*maxTextHeight )  )
 
   }
@@ -99,17 +99,17 @@ text_box_plot <- function( x_left = 0.3, y_bottom = 0.3, x_right = 0.7, y_top = 
 
   if( horizontal_alignment == "left" || horizontal_alignment == "Left" ){
 
-    textLeft <- x_left + left_margin*textBoxWidth
+    textLeft <- x1 + left_margin*textBoxWidth
     adjNow <- 0
 
   } else if ( horizontal_alignment == "centre" || horizontal_alignment == "Centre" ){
 
-    textLeft <- x_left + left_margin*textBoxWidth + 0.5*textAreaWidth
+    textLeft <- x1 + left_margin*textBoxWidth + 0.5*textAreaWidth
     adjNow <- 0.5
 
   } else if ( horizontal_alignment == "right" || horizontal_alignment == "Right" ){
 
-    textLeft <- x_right - right_margin*textBoxWidth
+    textLeft <- x2 - right_margin*textBoxWidth
     adjNow <- 1
 
   }

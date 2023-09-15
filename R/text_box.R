@@ -5,7 +5,7 @@
 
 loremText <- "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
-text_box <- function( x_left = 0.3, y_bottom = 0.1, x_right = 0.9, y_top = 0.4,
+text_box <- function( x1 = 0.3, y1 = 0.1, x2 = 0.9, y2 = 0.4,
                        text = NULL,
                        cex=1, font=1, family="",
                        adj=0, srt=0, border=F, lty=1,
@@ -26,7 +26,7 @@ text_box <- function( x_left = 0.3, y_bottom = 0.1, x_right = 0.9, y_top = 0.4,
   # save par values
   beforePar <- par()
 
-  par( fig = c( x_left, x_right, y_bottom, y_top ), new=T )
+  par( fig = c( x1, x2, y1, y2 ), new=T )
   par( mar=c(0,0,0,0), oma=c(0,0,0,0) )
 
   plot_blank(  )

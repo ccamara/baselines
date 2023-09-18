@@ -1,3 +1,12 @@
+#' Create conversion measures ( cm, inch, px ) for margins, and plot, figure and device regions
+#'
+#' @param ... global par() parameters passed to function
+#'
+#' @return s3 object of par measures with par values appended
+#' @export
+#'
+#' @examples
+
 par_measures <- function( ... ){
 
 ###___ save dimensions for region/area and each unit

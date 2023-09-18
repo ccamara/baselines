@@ -1,9 +1,36 @@
-# NOT DONE PROPERLY  - rotation?
 
-# add in *italic*, **bold** and ***bold and italic*** with simple markdown markup
-# i.e. recognise stops, and write separate chunks within line using font=1:4
+#' Draw text box over current device
+#'
+#' @param x1 value for left, horizontal position in relation to device (in range 0:1)
+#' @param y1 value for bottom, vertical position in relation to device (in range 0:1)
+#' @param x2 value for right
+#' @param y2 value for top
+#' @param text a character vector or expression specifying the text to be written with "Lorem ipsum..." default
+#' @param cex text size, character expansion value (see par)
+#' @param font default to the values of the global graphical parameters in par()
+#' @param family default to the values of the global graphical parameters in par()
+#' @param adj alignment of text (but see arguments below)
+#' @param srt rotation (not currently implemented)
+#' @param border logical or value for the colour of the box border
+#' @param lty value for the line type, e.g. 1, 2, 3 or 4... or "22"
+#' @param col_box fill colour of the box
+#' @param col_text colour of the text
+#' @param left_margin padding around text within box
+#' @param right_margin padding around text within box
+#' @param top_margin padding around text within box
+#' @param bottom_margin padding around text within box
+#' @param line_spacing padding between lines
+#' @param vertical_alignment top, centre or bottom alignment
+#' @param horizontal_alignment left, middle or right alignment
+#' @param ... other parameters, see global graphical parameters in par()
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' text_box()
+#'
 
-loremText <- "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
 text_box <- function( x1 = 0.3, y1 = 0.1, x2 = 0.9, y2 = 0.4,
                        text = NULL,
@@ -18,6 +45,11 @@ text_box <- function( x1 = 0.3, y1 = 0.1, x2 = 0.9, y2 = 0.4,
                        line_spacing = 0.05,
                        vertical_alignment = "top",
                        horizontal_alignment = "left", ... ){
+
+  # NOT DONE PROPERLY  - rotation?
+
+  # add in *italic*, **bold** and ***bold and italic*** with simple markdown markup
+  # i.e. recognise stops, and write separate chunks within line using font=1:4
 
 
   # use 'lorem...' text for default

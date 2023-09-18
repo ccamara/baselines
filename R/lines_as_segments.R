@@ -1,13 +1,18 @@
 
-
-# plot lines piecewise to add widths or colours.
+#' Draw lines piecewise, to add widths or colours for each segment
+#'
+#' @param x values for the x coordinates
+#' @param y values for the y coordinates
+#' @param ... other parameters, see global graphical parameters in par()
+#'
+#' @return
+#' @export
+#'
+#' @examples
 
 lines_as_segments <- function( x, y,
                                #z,
                                ... ){
-
-  #if( ( length(y) - 1) < length( z ) ) warning( "too many Z values... check or consider using lines" )
-  #if( ( length(y) - 1) > length( z ) ) warning( "not enough Z values... check or consider using lines" )
 
   segments( x[ 1:(length(x)-1) ], y[ 1:(length(y)-1) ],
             x[ 2:length(y) ], y[ 2:length(y) ], ...  )

@@ -1,4 +1,14 @@
-#
+#' Draw box around figure region
+#'
+#' @param border colour of border line
+#' @param lwd line width of border line
+#' @param lty line type of border line
+#' @param ... other parameters, see global graphical parameters in par()
+#'
+#' @return
+#' @export
+#'
+#' @examples
 
 box_outer <- function( border="hotpink", lwd=2, lty="33", ... ){
 

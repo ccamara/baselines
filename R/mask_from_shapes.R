@@ -1,8 +1,20 @@
 
-mask_from_shapes <- function( inner_shape,
-                            outer_shape = plot_region_rect(),
-                            draw = T,
-                            border=F, col="skyblue4", ...){
+#' Cut one shape form another to create a mask
+#'
+#' @param inner_shape coordinates of shape to be cut out
+#' @param outer_shape coordinates of outer shape which is cut from, defaults to plot region
+#' @param draw logical parameter defining whether shape is drawn or not, defaults to TRUE
+#' @param border border colour if shape is drawn
+#' @param col fill colour if shape is drawn
+#' @param ...
+#'
+#' @return coordinates of mask shape and shape drawn if draw=T (default)
+#' @export
+#'
+#' @examples
+
+mask_from_shapes <- function( inner_shape, outer_shape = plot_region_rect(),
+                              draw = T, border=F, col="skyblue4", ...){
 
   # ADD check inner is within outer....
 
@@ -12,14 +24,9 @@ mask_from_shapes <- function( inner_shape,
   #outer_shape <- close_shape( outer_shape)
 
   # set opposite shape directions straight away
-
-
-
   if( shape_direction( inner_shape) == shape_direction( outer_shape) ) {
     inner_shape <- as.data.frame( cbind(  rev( inner_shape[,1] ), rev( inner_shape[,2] ) ) )
   }
-
-  # names(inner_shape) <- names(outer_shape)
 
   # calc distances from outer_top_right to all inner points
   distance_to_inner <- ( ( outer_shape[1,1] - inner_shape[,1] )^2 +

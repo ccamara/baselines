@@ -1,3 +1,10 @@
+#' Create data frame of plot region coordinates
+#'
+#' @return
+#' @export
+#'
+#' @examples
+
 plot_region_rect <- function(){
 
   x <- c( par()$usr[1], par()$usr[1], par()$usr[2], par()$usr[2], par()$usr[1] )

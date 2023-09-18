@@ -1,3 +1,14 @@
+#' Create a shape for a polygon to the left of your data
+#'
+#' @param shape values for the coordinates of the data/shape to be closed to the left
+#' @param left_to_right a logical parameter specifying whether the data is read left to right or not
+#' @param extreme_value a value defining the top of the new shape
+#'
+#' @return a data frame of coordinates for the new, closed shape
+#' @export
+#'
+#' @examples
+
 close_shape_left <- function( shape, top_to_bottom=T, extreme_value=NULL ){
 
   if( is.null( extreme_value) == T ) extreme_value <- min( shape[ , 1] )

@@ -1,4 +1,14 @@
 
+#' Overlay current margins on an active plot, visual query
+#'
+#' @return overlay on the active plot showing margin region and margin lines, the plot region is shown with min/max data values as dashed rect
+#' @export
+#'
+#' @examples
+#' par( mfrow= c(3,3) )
+#' plot_blank()
+#' overlay_margin()
+
 overlay_margin <- function(){
 
   # save previous par settings

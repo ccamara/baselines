@@ -1,5 +1,15 @@
 
-colour_palette <- function( colours ){
+#' Display a list of colours with hex codes and against backgrounds
+#'
+#' @param colours list of colours to be displayed
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' colour_palette()
+
+colour_palette <- function( colours = grey.colors(15) ){
 
   plot( x=seq(0, length(colours), by=1),
         y=rep(0, length(colours)+1),

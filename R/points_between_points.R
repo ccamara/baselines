@@ -1,6 +1,17 @@
 
-# for any two points, get N divisions along that (straight) line.
 
+
+
+#' Create N divisions between two points (straight line)
+#'
+#' @param point_1 coordinates of first point c( x1 ,y1 )
+#' @param point_2 coordinates of second point c( x2, y2 )
+#' @param distance value(s) for distances (proportion) of positions between points
+#'
+#' @return data frame of coordinates for the points, between points
+#' @export
+#'
+#' @examples
 
 points_between_points <- function( point_1, point_2, distance=0.5 ){
 

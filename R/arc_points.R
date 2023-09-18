@@ -1,12 +1,21 @@
-
-# create arc ( circle by default )
+#' Create coordinates for an arc
+#'
+#' @param arc_length length of the arc in the units specified
+#' @param from position the arc starts from
+#' @param units degrees (default) or radians, the units of the arc
+#' @param n_points number of points in the  arc
+#'
+#' @return a data frame of coordinates for the arc (x, Y)
+#' @export
+#'
+#' @examples
+#' arc_points() # returns a circle of 180 points, clockwise from north scaled -1 < x < 1, -1 < y <1
+#' plot( arc_points( arc_length = 270, from =90, n_points = 10 ), type='l') # arc of 10 points, clockwise from east to north
 
 arc_points <- function( arc_length = 360,
                        from = 0,
                        units = "degrees",
-                       n_points = 180
-                       #clockwise=T
-                       ){
+                       n_points = 180 ){
 
   # convert to radians if degrees
   if( units == "degrees" ) {

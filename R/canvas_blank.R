@@ -1,6 +1,14 @@
 
-# a blank plot given the data i.e. not plot.new() as it has the context of the data
-
+#' create a blank canvas to draw onto, with no margins (or outer margins) and whole device
+#'
+#' @param asp aspect ratio in the  canvas
+#' @param restore_previous_par logical value specifying if previous par parametrs should be restored, defaulting to FALSE
+#' @param ...
+#'
+#' @return
+#' @export
+#'
+#' @examples
 
 canvas_blank <-  function( asp=NULL, restore_previous_par=F, ... ){
 

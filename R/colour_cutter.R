@@ -1,10 +1,25 @@
-# R cutter function (general use)
-# replacement / alternative / evaluation version for autoshading (as in GIStools)
 
-# also add methods from https://gistbok.ucgis.org/bok-topics/2019-quarter-02/statistical-mapping-enumeration-normalization-classification
-# e.g. maximum breaks, k means, + head tail breaks
+
+#' Create colour bins using quantile, range, sd and Kmeans methods
+#'
+#' @param data the data values to be binned
+#' @param colours list of colours
+#' @param cutter the method to be used
+#' @param n_nested_bins number of bins within bins for visual testing
+#'
+#' @return an S3 auto-shading object emulating that of the GISTOOLS package
+#' @export
+#'
+#' @examples
 
 colour_cutter <- function( data = 1:7, colours = grey.colors(7), cutter ="quantile", n_nested_bins = 2 ){
+
+  # R cutter function (general use)
+  # replacement / alternative / evaluation version for 'autoshading' in GIStools
+  # but see classInt::classIntervals
+
+  # also add methods from https://gistbok.ucgis.org/bok-topics/2019-quarter-02/statistical-mapping-enumeration-normalization-classification
+  # e.g. maximum breaks, k means, + head tail breaks
 
         Ncolours <- length(colours)
 

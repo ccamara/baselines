@@ -1,4 +1,17 @@
 
+#' Create a test plot ( with data and inner and outer margins)
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#' plot_test()
+#' box_outer()
+#' overlay_outer_margin()
+#' axis_labels( side=4, col="hotpink", cex=2 )
+#' overlay_margin()
+
+
 plot_test <-  function(){
 
   #dev.new()

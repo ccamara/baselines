@@ -1,4 +1,13 @@
 
+#' Overlay outer margins on an active plot device, visual query
+#'
+#' @return overlay the outer margin region and margin lines on active plot
+#' @export
+#'
+#' @examples
+#' plot_test()
+#' overlay_outer_margin()
+
 overlay_outer_margin <- function(){
 
       # save previous par settings with ways.par functions

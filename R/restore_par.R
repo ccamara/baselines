@@ -1,4 +1,14 @@
 
+#' Restore par settings to defaults or to specified par values
+#'
+#' @param previous_par an object contained saved par values
+#' @param ... other parameters from par() parameter
+#'
+#' @return
+#' @export
+#'
+#' @examples
+
 restore_par <- function( previous_par = NULL, ... ){
 
       if( is.null( previous_par ) == T ) {

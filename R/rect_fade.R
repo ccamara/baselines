@@ -1,4 +1,22 @@
 
+#' Draw a rect with faded fill between two or more colours
+#'
+#' @param x1 value for left, horizontal position in plot region coordinates
+#' @param y1 value for bottom, vertical position in plot region coordinates
+#' @param x2 value for right
+#' @param y2 value for top
+#' @param start_side number specifying which axis side the fade begins from
+#' @param resolution number of bins in the fade
+#' @param colours two or more colours for the fade
+#' @param border_colour colour of the border line
+#' @param xpd logical value defining if rect is drawn outside plot region
+#' @param alpha transaprency value
+#' @param ... other parameters, see global graphical parameters in par()
+#'
+#' @return
+#' @export
+#'
+#' @examples
 rect_fade <-  function( x1 = par()$usr[1], y1 = par()$usr[3],
                        x2 = par()$usr[2], y2 = par()$usr[4],
                        start_side=1, resolution=20,

@@ -1,11 +1,17 @@
 
-# return the settings to blank/plain canvas
+
+#' return to the blank/plain canvas settings
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#'
+#'
 
 pop_to_canvas <- function( ){
 
     prevPar <- par()
-
-    # add visual error?! i.e. if "figure margins too large"
 
     par( mar = c( 0, 0, 0, 0 ) )
     par( oma = c( 0, 0, 0, 0 ) )

@@ -1,9 +1,18 @@
-#
-# find direction of rotation in shape.....
-# crisp solution https://stackoverflow.com/questions/1165647/how-to-determine-if-a-list-of-polygon-points-are-in-clockwise-order
+
+#' Find direction of rotation for shape coordinates
+#'
+#' @param shape coordinates for shape
+#' @param draw logical value specifying whether shape is drawn or not, defaults to false
+#'
+#' @return
+#' @export
+#'
+#' @examples
 
 
 shape_direction <- function( shape, draw=FALSE ){
+
+    # using crisp solution https://stackoverflow.com/questions/1165647/how-to-determine-if-a-list-of-polygon-points-are-in-clockwise-order
 
     # create centre/origin for shape
     centre_x <-  min( shape[, 1] ) + 0.5*( max( shape[, 1] ) - min( shape[, 1] ))

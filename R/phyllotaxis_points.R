@@ -1,9 +1,19 @@
 
-# see coding train https://www.youtube.com/watch?v=KWoJgHFYWxY
+#' Generate points in a phyllotaxis pattern for visual demonstrations
+#'
+#' @param n_points number of points to create
+#' @param ma value controlling the spread of the pattern
+#'
+#' @return a data frame of values for each point
+#' @export
+#'
+#' @examples
 
 phyllotaxis_points <- function( n_points=1000, ma ){
 
-c=2
+# see coding train https://www.youtube.com/watch?v=KWoJgHFYWxY
+
+  c=2
 # tightness of packing
 ma <- 137.5 * pi/180
 n <- 1:n_points

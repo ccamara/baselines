@@ -9,6 +9,14 @@
 #' @export
 #'
 #' @examples
+#' myPoints <- arc_points( arc_length = 180, from = 270, n_points = 10 )
+#' plot( myPoints, type='l')
+#' lines_as_segments( myPoints$x, myPoints$y, col= rainbow(9), lwd=seq( 3, 9, l=9) )
+#' library( HistData )
+#' plot( Minard.troops$long, Minard.troops$lat, type='n' )
+#' lines_as_segments( Minard.troops$long, Minard.troops$lat,
+#'                   lwd=30*Minard.troops$survivors/max(Minard.troops$survivors),
+#'                   col=hsv(1, 0.5, 0.4+0.5*( 1-Minard.troops$survivors/max(Minard.troops$survivors)) ) )
 
 lines_as_segments <- function( x, y,
                                #z,

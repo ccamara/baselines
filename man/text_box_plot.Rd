@@ -5,10 +5,10 @@
 \title{Draw text box in plot region}
 \usage{
 text_box_plot(
-  x1 = 0.3,
-  y1 = 0.3,
-  x2 = 0.7,
-  y2 = 0.7,
+  x1 = par()$usr[1],
+  y1 = par()$usr[3],
+  x2 = par()$usr[2],
+  y2 = par()$usr[4],
   text = NULL,
   cex = 1,
   font = 1,
@@ -31,13 +31,13 @@ text_box_plot(
 )
 }
 \arguments{
-\item{x1}{value for left, horizontal position in plot region coordinates}
+\item{x1}{value for left, horizontal position in plot region coordinates, defaults to plot region}
 
-\item{y1}{value for bottom, vertical position in plot region coordinates}
+\item{y1}{value for bottom, vertical position in plot region coordinates, defaults to plot region}
 
-\item{x2}{value for right}
+\item{x2}{value for right, defaults to plot region}
 
-\item{y2}{value for top}
+\item{y2}{value for top, defaults to plot region}
 
 \item{text}{a character vector or expression specifying the text to be written with "Lorem ipsum..." default}
 
@@ -77,4 +77,8 @@ text_box_plot(
 }
 \description{
 Draw text box in plot region
+}
+\examples{
+plot_blank()
+text_box_plot()
 }

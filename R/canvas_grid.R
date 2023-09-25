@@ -39,8 +39,11 @@ canvas_grid <- function( x1=0, x2=1,
   segments( x_Sequence, 0, x_Sequence, 1, col=col, lwd=lwd )
   segments( 0, y_Sequence, 1, y_Sequence, col=col, lwd=lwd )
 
-  text( x_Sequence, 0, labels= x_Sequence, pos=3, col=col, cex=1)
-  text( 1, y_Sequence, labels= y_Sequence, pos=2, col=col, cex=1)
+  text( x_Sequence+0.005, 0.01, labels= x_Sequence, adj=0, col=col, cex=1)
+  text( x_Sequence-0.005, 0.99, labels= x_Sequence, adj=1, col=col, cex=1)
+
+  text( 0.005, y_Sequence, labels= y_Sequence, adj=c( 0, 0), col=col, cex=1)
+  text( 0.995, y_Sequence, labels= y_Sequence, adj=c( 1, 1),col=col, cex=1)
 
   restore_par( previous_par )
 

@@ -10,7 +10,7 @@
 #'
 #' @examples
 
-canvas_blank <-  function( asp=NULL, restore_previous_par=F, ... ){
+canvas_blank <-  function( restore_previous_par=F, asp=NULL, ... ){
 
   par_to_restore <- par()
 
@@ -27,9 +27,7 @@ canvas_blank <-  function( asp=NULL, restore_previous_par=F, ... ){
   #restore_figure_region( )
 
   if( restore_previous_par == T ){
-      restore_par(  par_to_restore  )
-  } else {
-      restore_par( )
+      restore_par(  previous_par = par_to_restore  )
   }
 
 }

@@ -4,12 +4,12 @@
 \alias{canvas_blank}
 \title{create a blank canvas to draw onto, with no margins (or outer margins) and whole device}
 \usage{
-canvas_blank(asp = NULL, restore_previous_par = F, ...)
+canvas_blank(restore_previous_par = F, asp = NULL, ...)
 }
 \arguments{
-\item{asp}{aspect ratio in the  canvas}
-
 \item{restore_previous_par}{logical value specifying if previous par parametrs should be restored, defaulting to FALSE}
+
+\item{asp}{aspect ratio in the  canvas}
 
 \item{...}{}
 }

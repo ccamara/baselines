@@ -83,7 +83,10 @@ overlay_margin <- function(){
 
 
   # remove margins for full figure region
-  par( mar=c(0,0,0,0) )
+  par( mar=c( 0,0,0,0 ) )
+
+  # set figure region
+  par( fig= prevPar$par$fig )
 
   # plot to figure region
   par(new=T)
@@ -111,8 +114,9 @@ overlay_margin <- function(){
   #    | |_____| |
   #    |_________|
 
-  # reset to plot area
+  # reset to plot and figure area
   par( mar = prevPar$par$mar )
+  par( fig= prevPar$par$fig )
 
   # blank plot scaled 0 to 1 ... enables easy annotations
   par(new=T)

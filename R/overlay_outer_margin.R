@@ -139,6 +139,7 @@ overlay_outer_margin <- function(){
       par( prevPar$par[ - removeElementsWithWarnings ] )
 
       par( mfg = c( prevPar$par$mfg )  )
+      par( fig= prevPar$par$fig )
       # par( mfrow = c() )
 
 

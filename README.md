@@ -14,7 +14,6 @@ Paul Murrell (2019)
 [Page 1 / Chapter 1. An Introduction to R Graphics. R Graphics Third Edition. CRC Press.](https://www.stat.auckland.ac.nz/~paul/RG3e/) 
 <br clear="left"/>
 
-[https://www.routledge.com/R-Graphics-Third-Edition/Murrell/p/book/9781498789059]
 (https://www.routledge.com/R-Graphics-Third-Edition/Murrell/p/book/9781498789059) 
 <br clear="left"/>
 

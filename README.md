@@ -7,14 +7,6 @@
 
 
 
-## installation
-
-```r
-library( remotes )
-remotes::install_github("GregMci/baselines")  
-library( "baselines" )
-```  
-
 
 ### The functionality of baselines falls into five general themes:
 
@@ -46,6 +38,18 @@ Although accessible through code, many system and device `options()`, and graphi
 ##### *+ Miscellaneous*
 
 A number of other helper functions (e.g. `shape_direction()`), functions used for testing (e.g. `plot_test()`), and functions generating data used in other packages are also made available (e.g. `phyllotaxis_points()` used in the vocale R package - GregMci/vocale: Visually Organised Cheat-sheets As Literal Explanations (github.com)).
+
+
+
+
+## installation
+
+```r
+library( remotes )
+remotes::install_github("GregMci/baselines")  
+library( "baselines" )
+```  
+
 
 
 ### Notes:

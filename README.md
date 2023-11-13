@@ -31,7 +31,7 @@ Drawing objects outside of plots may not always be in relation to the plot regio
 
 #### *3. Simplifying graphics components*
 
-Quick access to components of the `axis()` and `title()` functions are made possible with `axis_labels()`, `axis_ticks()`& `axis_line()`, and `text_main_title()`, `text_sub_title()`, `text_x_label()` & `text_y_label()`. The argument names are the simplified so, for example, the `col` argument is used across all functions as the function name, rather than particular arguments, specify what object `col` refers to.
+Quick access to components of the `axis()` and `title()` functions are made possible with `axis_labels()`, `axis_ticks()`& `axis_line()`, and `text_main_title()`, `text_sub_title()`, `text_x_label()` & `text_y_label()`. The argument names are the simplified so, for example, across all these functions the `col` argument is used as the function name, rather than particular arguments, specify what object `col` refers to.
 
 
 #### *4. Visual queries* 

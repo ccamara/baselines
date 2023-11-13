@@ -4,6 +4,7 @@
 #' @param lwd number for the line width
 #' @param col colour of the tick marks
 #' @param length distance of tick marks into the plot region (+ve values) or out of the plot region (-ve values)
+#' @param tcl insted of relative length, use tcl for fixed length as fraction of height of a line of text
 #' @param ... other parameters, see global graphical parameters in par()
 #'
 #' @return

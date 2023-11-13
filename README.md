@@ -7,6 +7,15 @@
 
 
 
+## installation
+
+```r
+library( remotes )
+remotes::install_github("GregMci/baselines")  
+library( "baselines" )
+```  
+
+
 ### The functionality of baselines falls into five general themes:
 
 ##### *1. Drawing Graphics Within Plots*

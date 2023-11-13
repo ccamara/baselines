@@ -10,32 +10,32 @@
 
 ## The functionality of baselines falls into five general themes:
 
-##### *1. Drawing Graphics Within Plots*
+#### *1. Drawing Graphics Within Plots*
 
 Simple drawing tools - like a gradient filled box,`rect_fade()` - are made easily accessible through R functions. The drawing tools relate to graphics objects and methods which are commonly needed to creating and annotating bespoke visualisations. Each is based on often repeated coding tasks like creating a circle, arc, sector, or donut sector (`arc_shape()`, `arc_points()`), creating a closed shape above, below, or to the left or right, of a line (e.g. `close_shape_`). A variety of functionality is provided, including a simple `plot_text_box()`, `points_betwen_points()`) and `lines_as_segments()` to colour or format individual parts of lines according to data. Simple shape objects are provided for annotation, such as `rect_sides()` which produces a rectangle where selected sides are drawn rather than all four. Straightforward drawing tools, like drawing a rectangle for the `plot_background()` are included. 
 
 
-##### *2. Drawing Graphics on the Canvas/Device*  
+#### *2. Drawing Graphics on the Canvas/Device*  
 
 Drawing objects outside of plots may not always be in relation to the plot region, and instead be in relation to the device ‘canvas’ region. These drawing tools enable some similar functions to drawing graphics within plots, but given the whole device, irrespective of the layout or plot region values. The tool kit include a `text_box()’, `canvas_line()`, `canvas_rect()` and `canvas_background()`.
 
 
-##### *3. Simplifying graphics components*
+#### *3. Simplifying graphics components*
 
 Quick access to components of the `axis()` and `title()` functions are made possible with `axis_labels()`, `axis_ticks()`& `axis_line()`, and `text_main_title()`, `text_sub_title()`, `text_x_label()` & `text_y_label()`. The argument names are the simplified so, for example, the `col` argument is used across all functions as the function name, rather than particular arguments, specify what object `col` refers to.
 
 
-##### *4. Visual queries* 
+#### *4. Visual queries* 
 
 Many crucial features of visualisations are present but can be invisible and queried through code, such as plot margins (`overlay_margins()`, `overlay_outer_margins()`) and figure regions (`box_outer()`), or as in the case of device coordinates (`canvas_grid()`), are only made visible when used to draw as part of another function. Visual overlays are not necessarily intended to be a component of the final plot, rather as guides and measuring tools used during the design and development of visualisations. 
 
 
-##### *5. Accessible Settings*
+#### *5. Accessible Settings*
 
 Although accessible through code, many system and device `options()`, and graphics `par`-ameters do not follow a structure allowing autocomplete in Rstudio, or may require multiple calls and priori knowledge to identify and access graphics states and values. These may be most usefully access through code and returned as data for re-use as in `par_measures()` and `par_print_summary()`. 
 
 
-##### *+ Miscellaneous*
+#### *+ Miscellaneous*
 
 A number of other helper functions (e.g. `shape_direction()`), functions used for testing (e.g. `plot_test()`), and functions generating data used in other packages are also made available (e.g. `phyllotaxis_points()` used in the vocale R package - GregMci/vocale: Visually Organised Cheat-sheets As Literal Explanations (github.com)).
 

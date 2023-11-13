@@ -5,9 +5,10 @@
 
 <img width="250" align="right" src="https://github.com/GregMci/baselines/blob/master/base%20lines%20hex%20logo.png" />
 
+
 *“In order to produce graphical output, the user calls a series of graphics functions, each of which produces either a complete plot or adds some output to an existing plot."*
 
-*" R graphics follows a 'painters model,' which means that the graphics output occurs in steps, with later output drawn on top of any previous output.”* 
+*"R graphics follows a 'painters model,' which means that the graphics output occurs in steps, with later output drawn on top of any previous output.”* 
 
 Paul Murrell (2019) 
 

@@ -46,7 +46,7 @@ Although accessible through code, many system and device `options()`, and graphi
 
 #### *+ Miscellaneous*
 
-A number of other helper functions (e.g. `shape_direction()`), functions used for testing (e.g. `plot_test()`), and functions generating data used in other packages are also made available (e.g. `phyllotaxis_points()` used in the [vocale R package] (https://github.com/GregMci/vocale).
+A number of other helper functions (e.g. `shape_direction()`), functions used for testing (e.g. `plot_test()`), and functions generating data used in other packages are also made available (e.g. `phyllotaxis_points()` used in the vocale R package (https://github.com/GregMci/vocale).
 
 
 

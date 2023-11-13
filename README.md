@@ -8,7 +8,7 @@
 
 
 
-### The functionality of baselines falls into five general themes:
+## The functionality of baselines falls into five general themes:
 
 ##### *1. Drawing Graphics Within Plots*
 
@@ -52,7 +52,7 @@ library( "baselines" )
 
 
 
-### Notes:
+## Notes:
 
 * ***Device as a canvas*** - Commonly, a plot is the starting point for graphics in R. Rather than specifying where on a canvas the object appears, for the user, this approach specifies objects in relation to the plot. A canvas-first encourages consideration of multiple elements, rather than a single plot element, and easily enables annotations to be drawn above and around plots, even if they have intricate layouts.
 

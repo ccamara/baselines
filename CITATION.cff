@@ -1,0 +1,22 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: baselines
+message: >-
+  a drawing toolbox and overlay, visual guides for R
+  graphics (base)
+type: software
+authors:
+  - given-names: Greg
+    family-names: McInerny
+    email: g.mcinerny@warwick.ac.uk
+    affiliation: University of Warwick
+identifiers:
+  - type: url
+    value: 'https://github.com/GregMci/baselines'
+    description: Github Repo
+repository-code: 'https://github.com/GregMci/baselines'
+abstract: >-
+  a drawing toolbox and overlay, visual guides for R
+  graphics (base)

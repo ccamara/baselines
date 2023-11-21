@@ -51,7 +51,7 @@ A number of other helper functions (e.g. `shape_direction()`), functions used fo
 
 
 
-## installation
+## installation:
 
 ```r
 library( remotes )
@@ -61,7 +61,7 @@ library( "baselines" )
 
 
 
-## Notes:
+## notes:
 
 * ***Device as a canvas*** - Commonly, a plot is the starting point for graphics in R. Rather than specifying where on a canvas the object appears, for the user, this approach specifies objects in relation to the plot. A canvas-first encourages consideration of multiple elements, rather than a single plot element, and easily enables annotations to be drawn above and around plots, even if they have intricate layouts.
 
@@ -76,6 +76,6 @@ library( "baselines" )
 * ***Defaults Draw*** - As per many point-click-drag software, selection of a new object produces that object given some default settings. So, for instance, ‘r rect_fade()’ will produce a gradient filled box without any arguments supplied.
 
 
-## Acknowledgments
+## acknowledgments:
 
 This work was initiated with funding from the Alan Turing Institute within the ‘Tools, Practices and Systems’ theme, under the EPSRC Cross-Discipline Interface Programme (grant number EP/I017909/1).

@@ -75,3 +75,7 @@ library( "baselines" )
 
 * ***Defaults Draw*** - As per many point-click-drag software, selection of a new object produces that object given some default settings. So, for instance, ‘r rect_fade()’ will produce a gradient filled box without any arguments supplied.
 
+
+## Acknowledgments
+
+This work was initiated with funding from the Alan Turing Institute within the ‘Tools, Practices and Systems’ theme, under the EPSRC Cross-Discipline Interface Programme (grant number EP/I017909/1).

@@ -1,7 +1,7 @@
 
 
 
-# baselines - a drawing toolbox and overlay, visual guides for R graphics (base)
+# baselines - a drawing toolbox with visual overlay guides for R graphics (base)
 
 <img width="250" align="right" src="https://github.com/GregMci/baselines/blob/master/base%20lines%20hex%20logo.png" />
 

@@ -1,9 +1,10 @@
 Package: baselines
 Type: Package
-Title: What the Package Does (Title Case)
+Title: baselines - a drawing toolbox with visual overlay guides for R graphics (base)
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
+Authors@R: person( given = "Greg", family = "McInerny", email = "g.mcinerny@warwick.ac.uk", role = c("aut", "cre") )
+URL: https://github.com/GregMci/baselines
+Maintainer: The package maintainer <g.mcinerny@warwick.ac.uk>
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
 License: What license is it under?

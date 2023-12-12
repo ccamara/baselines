@@ -17,6 +17,8 @@ axis_ticks(side = NULL, lwd = 1, col = "grey20", length = -0.05, ...)
 \item{length}{distance of tick marks into the plot region (+ve values) or out of the plot region (-ve values)}
 
 \item{...}{other parameters, see global graphical parameters in par()}
+
+\item{tcl}{insted of relative length, use tcl for fixed length as fraction of height of a line of text}
 }
 \description{
 Draw axis tick marks (without labels or axis line)

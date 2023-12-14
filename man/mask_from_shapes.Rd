@@ -24,7 +24,7 @@ mask_from_shapes(
 
 \item{col}{fill colour if shape is drawn}
 
-\item{...}{}
+\item{...}{other parameters, see global graphical parameters in par()}
 }
 \value{
 coordinates of mask shape and shape drawn if draw=T (default)

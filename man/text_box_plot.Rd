@@ -55,6 +55,8 @@ text_box_plot(
 
 \item{lty}{value for the line type, e.g. 1, 2, 3 or 4... or "22"}
 
+\item{xpd}{logical value for whether text/shapes extend beyond plot region}
+
 \item{col_box}{fill colour of the box}
 
 \item{col_text}{colour of the text}

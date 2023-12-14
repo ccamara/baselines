@@ -7,7 +7,7 @@ URL: https://github.com/GregMci/baselines
 Maintainer: The package maintainer <g.mcinerny@warwick.ac.uk>
 Description: Drawing tools relating to graphics objects and methods which are commonly needed to create and annotate bespoke visualisations. The tools include - 1. Drawing Graphics Within Plots, 2. Drawing Graphics on the Canvas/Device, 3. Simplifying graphics components, 4. Visual queries & 5. Accessible Settings, as well as some Miscellaneous functions.
 License: MIT + file LICENSE
-Imports: HistData
+Suggests: HistData
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.3

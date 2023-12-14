@@ -7,7 +7,7 @@
 inches_2_cm(inches)
 }
 \arguments{
-\item{cms}{values in inches to be converted to centimetres}
+\item{inches}{values in inches to be converted to centimetres}
 }
 \description{
 Convert inches to cm

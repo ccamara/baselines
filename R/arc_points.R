@@ -10,7 +10,8 @@
 #'
 #' @examples
 #' arc_points() # returns a circle of 180 points, clockwise from north scaled -1 < x < 1, -1 < y <1
-#' plot( arc_points( arc_length = 270, from =90, n_points = 10 ), type='l') # arc of 10 points, clockwise from east to north
+#' # arc of 10 points, clockwise from east to north
+#' plot( arc_points( arc_length = 270, from =90, n_points = 10 ), type='l')
 
 arc_points <- function( arc_length = 360,
                        from = 0,

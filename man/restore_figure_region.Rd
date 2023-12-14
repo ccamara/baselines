@@ -7,8 +7,12 @@
 restore_figure_region(previous_par)
 }
 \arguments{
-\item{previous_par}{}
+\item{previous_par}{the saved par object}
 }
 \description{
 Restore the figure region parameters (but not margins)
+}
+\examples{
+previous_par_settings <- par()
+restore_figure_region( previous_par_settings )
 }

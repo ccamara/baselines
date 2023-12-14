@@ -3,7 +3,7 @@
 #'
 #' @param asp aspect ratio in the  canvas
 #' @param restore_previous_par logical value specifying if previous par parametrs should be restored, defaulting to FALSE
-#' @param ...
+#' @param ... other parameters, see global graphical parameters in par()
 #'
 #' @return
 #' @export

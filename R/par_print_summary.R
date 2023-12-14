@@ -1,3 +1,11 @@
+#' Quickly print out par settings for inspection
+#'
+#' @return
+#' @export
+#'
+#' @examples
+#'
+
 par_print_summary <- function(){
 
   print( "par()$usr:" )

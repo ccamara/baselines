@@ -1,1 +1,12 @@
 exportPattern("^[[:alpha:]]+")
+importFrom("grDevices",
+           "adjustcolor", "cm", "col2rgb", "colorRamp",
+           "dev.size", "grey.colors", "rgb", "rgb2hsv")
+importFrom("graphics",
+           "arrows", "axis", "hist", "lines", "mtext",
+           "par", "points", "polygon", "rect", "segments", "strheight",
+           "strwidth", "text", "title")
+importFrom("stats",
+           "approx", "kmeans", "quantile", "runif", "sd")
+importFrom("utils",
+           "head", "tail")

@@ -19,7 +19,7 @@ canvas_grid(x1 = 0, x2 = 1, y1 = 0, y2 = 1, col = "#dbe4f0", lwd = 0.5, ...)
 
 \item{lwd}{line width for grid}
 
-\item{...}{}
+\item{...}{other parameters, see global graphical parameters in par()}
 }
 \description{
 Draw a grid overlaying the canvas to determine object poistions and coordinates

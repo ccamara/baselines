@@ -7,7 +7,7 @@
 
 graphics_which_device <- function( ){
 
-  current_graphics_device<-  options("device")
-  return( current_graphics_device)
+  current_graphics_device <-  options( "device" )
+  return( current_graphics_device )
 
 }

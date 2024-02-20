@@ -20,6 +20,7 @@ box_outer <- function( border="hotpink", lwd=2, lty="33", ... ){
                beforePar$fig[3], beforePar$fig[4] ), new=T )
 
   #remove margins
+  #restore_par()
   par( mar=c(0,0,0,0), oma=c(0,0,0,0) )
 
   plot( 0:1, 0:1, type='n', axes=F, ann=F, xaxs='i', yaxs='i' )

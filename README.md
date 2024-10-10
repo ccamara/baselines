@@ -26,7 +26,7 @@ Simple drawing tools - like a gradient filled box,`rect_fade()` - are made easil
 
 #### *2. Drawing Graphics on the Canvas/Device*  
 
-Drawing objects outside of plots may not always be in relation to the plot region, and instead be in relation to the device ‘canvas’ region. These drawing tools enable some similar functions to drawing graphics within plots, but given the whole device, irrespective of the layout or plot region values. The tool kit include a `text_box()’, `canvas_line()`, `canvas_rect()` and `canvas_background()`.
+Drawing objects outside of plots may not always be in relation to the plot region, and instead be in relation to the device ‘canvas’ region. These drawing tools enable some similar functions to drawing graphics within plots, but given the whole device, irrespective of the layout or plot region values. The tool kit include a `text_box()`, `canvas_line()`, `canvas_rect()` and `canvas_background()`.
 
 
 #### *3. Simplifying graphics components*

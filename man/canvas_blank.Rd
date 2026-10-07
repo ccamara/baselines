@@ -11,7 +11,7 @@ canvas_blank(restore_previous_par = F, asp = NULL, ...)
 
 \item{asp}{aspect ratio in the  canvas}
 
-\item{...}{}
+\item{...}{other parameters, see global graphical parameters in par()}
 }
 \description{
 create a blank canvas to draw onto, with no margins (or outer margins) and whole device

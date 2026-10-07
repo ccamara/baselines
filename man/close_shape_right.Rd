@@ -9,9 +9,9 @@ close_shape_right(shape, top_to_bottom = T, extreme_value = NULL)
 \arguments{
 \item{shape}{values for the coordinates of the data/shape to be closed to the right}
 
-\item{extreme_value}{a value defining the top of the new shape}
+\item{top_to_bottom}{direction values are read}
 
-\item{left_to_right}{a logical parameter specifying whether the data is read left to right or not}
+\item{extreme_value}{a value defining the top of the new shape}
 }
 \value{
 a data frame of coordinates for the new, closed shape

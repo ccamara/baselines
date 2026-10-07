@@ -3,14 +3,16 @@
 #'
 #' @param asp aspect ratio in the  canvas
 #' @param restore_previous_par logical value specifying if previous par parametrs should be restored, defaulting to FALSE
-#' @param ...
+#' @param ... other parameters, see global graphical parameters in par()
 #'
 #' @return
 #' @export
 #'
 #' @examples
 
-canvas_blank <-  function( restore_previous_par=F, asp=NULL, ... ){
+canvas_blank <-  function( restore_previous_par=F, asp=NULL, new=F, ... ){
+
+  if( new == T )   par( new=T )
 
   par_to_restore <- par()
 
@@ -29,6 +31,8 @@ canvas_blank <-  function( restore_previous_par=F, asp=NULL, ... ){
   if( restore_previous_par == T ){
       restore_par(  previous_par = par_to_restore  )
   }
+
+  #if( new == T ) par( new=T )
 
 }
 

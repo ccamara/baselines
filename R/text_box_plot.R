@@ -15,6 +15,7 @@
 #' @param srt rotation (not currently implemented)
 #' @param border logical or value for the colour of the box border
 #' @param lty value for the line type, e.g. 1, 2, 3 or 4... or "22"
+#' @param xpd logical value for whether text/shapes extend beyond plot region
 #' @param col_box fill colour of the box
 #' @param col_text colour of the text
 #' @param left_margin padding around text within box

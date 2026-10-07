@@ -1,6 +1,6 @@
 #' Convert inches to cm
 #'
-#' @param cms values in inches to be converted to centimetres
+#' @param inches values in inches to be converted to centimetres
 #'
 #' @return
 #' @export

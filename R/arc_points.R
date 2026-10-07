@@ -2,6 +2,7 @@
 #'
 #' @param arc_length length of the arc in the units specified
 #' @param from position the arc starts from
+#' @param to can be used to specify end position of arc in place of arc_length
 #' @param units degrees (default) or radians, the units of the arc
 #' @param n_points number of points in the  arc
 #'
@@ -10,32 +11,44 @@
 #'
 #' @examples
 #' arc_points() # returns a circle of 180 points, clockwise from north scaled -1 < x < 1, -1 < y <1
-#' plot( arc_points( arc_length = 270, from =90, n_points = 10 ), type='l') # arc of 10 points, clockwise from east to north
+#' # arc of 10 points, clockwise from east to north
+#' plot( arc_points( arc_length = 270, from =90, n_points = 10 ), type='l')
 
 arc_points <- function( arc_length = 360,
-                       from = 0,
-                       units = "degrees",
-                       n_points = 180 ){
+                        from = 0,
+                        to = NULL,
+                        units = "degrees",
+                        n_points = 180 ){
 
   # convert to radians if degrees
-  if( units == "degrees" ) {
-    startRadians <- degrees_2_radians( from )
-    endRadians <- degrees_2_radians( arc_length )
+  if( units == "radians" ){
+    start_radians <- from
+    arc_length_radians <- arc_length
+    if( is.null( to ) == F ) end_radians <- to
+  } else if( units == "degrees" ) {
+      start_radians <- degrees_2_radians( from )
+      arc_length_radians <- degrees_2_radians( arc_length )
+      if( is.null( to ) == F ) end_radians <- degrees_2_radians( to )
   }
 
-  # set direction
-  if( endRadians >=0 ) arcDirection <- +1 else arcDirection <- -1
+
+  # set direction UNUSED ... CHECK!
+  #if( endRadians >=0 ) arcDirection <- +1 else arcDirection <- -1
 
   # angle for last position
-  lastRadians <- startRadians + endRadians
+  if( is.null( to ) == T ){
+    end_radians <- start_radians + arc_length_radians
+  }else{
+    end_radians <- end_radians
+  }
 
-  # add warning message if end pos is >1 rotation away
+  # ??? add warning message if end pos is >1 rotation away ???
 
-  # make circle res proportional to arc res
-  #circleRes <- 1 + ( n_points-1 )*( 2*pi /endRadians )
+  # ??? make circle res proportional to arc res ???
+  # circleRes <- 1 + ( n_points-1 )*( 2*pi /endRadians )
 
   # create sequence for sin and cos functions
-  pointsOnCircle <-  seq( startRadians, lastRadians, l=n_points )
+  pointsOnCircle <-  seq( start_radians, end_radians, l = n_points )
 
   # create arc  points
   xArc <- sin( pointsOnCircle )

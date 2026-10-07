@@ -11,7 +11,7 @@ points_between_points(point_1, point_2, distance = 0.5)
 
 \item{point_2}{coordinates of second point c( x2, y2 )}
 
-\item{distance}{value(s) for distances (proportion) of positions between points}
+\item{distance}{value(s) from 0 to 1 for distance(s) between points}
 }
 \value{
 data frame of coordinates for the points, between points

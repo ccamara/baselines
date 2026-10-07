@@ -1,6 +1,6 @@
 #' Get hsv values for colour/hex name
 #'
-#' @param col
+#' @param col colour to convert to hsv
 #'
 #' @return
 #' @export

@@ -6,7 +6,7 @@
 #' @param draw logical parameter defining whether shape is drawn or not, defaults to TRUE
 #' @param border border colour if shape is drawn
 #' @param col fill colour if shape is drawn
-#' @param ...
+#' @param ... other parameters, see global graphical parameters in par()
 #'
 #' @return coordinates of mask shape and shape drawn if draw=T (default)
 #' @export

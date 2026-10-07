@@ -6,7 +6,7 @@
 #' @param y2 top position of grid (defaulting to whole device)
 #' @param col colour for the grid with 0.5 transparency applied
 #' @param lwd line width for grid
-#' @param ...
+#' @param ... other parameters, see global graphical parameters in par()
 #'
 #' @return
 #' @export

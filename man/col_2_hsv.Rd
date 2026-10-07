@@ -7,7 +7,7 @@
 col_2_hsv(col)
 }
 \arguments{
-\item{col}{}
+\item{col}{colour to convert to hsv}
 }
 \description{
 Get hsv values for colour/hex name
